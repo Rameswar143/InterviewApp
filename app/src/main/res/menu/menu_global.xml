@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/mnu_user"
+        android:title=""
+        android:orderInCategory="100"
+        app:showAsAction="withText|always" />
+    <item android:id="@+id/mnu_back"
+        android:title="Back"
+        android:icon="@drawable/img_back"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom" />
+    <item android:id="@+id/mnu_settings"
+        android:title="Settings"
+        android:icon="@drawable/img_settings"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+    <item android:id="@+id/mnu_signout"
+        android:title="Sign Out"
+        android:icon="@drawable/img_signout"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+</menu>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ChristApp</string>
+    <string name="lbl_login">User Login</string>
+    <string name="mnu_settings">Settings</string>
+    <string name="lbl_home">Christ University</string>
+    <string name="lbl_single">Interview</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="lbl_group">Group Interview</string>
+    <string name="lbl_config">Settings</string>
+    <string name="lbl_app_no"><small><small>Application No</small></small></string>
+</resources>

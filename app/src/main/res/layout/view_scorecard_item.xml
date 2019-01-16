@@ -1,0 +1,41 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:paddingBottom="1px">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:padding="5dp"
+        android:layout_marginBottom="1px">
+        <TextView
+            android:id="@+id/lbl_text"
+            android:drawableLeft="@drawable/img_bullet"
+            android:drawablePadding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Commerce Background"
+            android:textColor="#555"
+            android:textSize="15sp"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:paddingLeft="5dp"
+            android:layout_alignParentLeft="true"/>
+        <ImageView
+            android:id="@+id/img_done"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:scaleType="fitCenter"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/img_tick"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"/>
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#CCCCCC"/>
+</LinearLayout>
+

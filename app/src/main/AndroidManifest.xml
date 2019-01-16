@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.app.vst.christapp" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".UILoginActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:noHistory="true"
+            android:screenOrientation="sensorPortrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:launchMode="singleInstance"
+            android:name=".UIHomeActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/lbl_home"
+            android:noHistory="false"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        <activity
+            android:name=".UISingleActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/lbl_single"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        <activity
+            android:name=".UIGroupActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/lbl_group"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        <activity
+            android:name=".UIConfigActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/lbl_config"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        <service
+            android:name="database.DataSynchService"
+            android:exported="false" />
+        <receiver
+            android:name="database.DataAlarmReceiver"
+            android:enabled="true"
+            android:exported="false" >
+        </receiver>
+    </application>
+
+</manifest>
